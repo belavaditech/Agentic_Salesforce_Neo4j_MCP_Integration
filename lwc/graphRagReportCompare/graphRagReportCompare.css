@@ -1,0 +1,22 @@
+.scrollable-box {
+  background: #fafafa;
+  border-radius: 8px;
+  padding: 0.75rem;
+  max-height: 450px;
+  overflow-y: auto;
+  font-family: 'Courier New', monospace;
+  font-size: 0.8rem;
+  white-space: pre-wrap; /* preserves newlines + wrapping */
+  word-break: break-word;
+}
+
+.preserve-format {
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.error-text {
+  color: red;
+  font-weight: bold;
+  white-space: pre-wrap;
+}
