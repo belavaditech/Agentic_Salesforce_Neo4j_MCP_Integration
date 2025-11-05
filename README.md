@@ -22,7 +22,7 @@
 ## Project Overview  
 This repository demonstrates an Agentic approach to integration between **Salesforce** (CRM platform) and **Neo4j** (graph-database) using the **Model Context Protocol (MCP)**, incorporating the concept of **GraphRAG** (Graph-based Retrieval-Augmented Generation).  
 
-This project showcases integration that leverage Apex, LWC, and Named Credentials on Salesforce side, and GraphRag pipeline functions, retrievers  on Neo4j side via MCP layer  
+This project showcases integration that leverage Apex, LWC, and Named Credentials on Salesforce side, and GraphRag pipeline functions, retrievers  on Neo4j side via an MCP layer  
 
 ---
 
@@ -163,7 +163,7 @@ cd Agentic_Salesforce_Neo4j_MCP_Integration
 6. Deploy LWC components (provided).  
 7. Configure the LWC components in your application
 
----
+
 
 ---
 
@@ -182,7 +182,7 @@ In Salesforce:
 - Set up a **Named Credential** pointing to the MCP Gateway endpoint.  
 - Assign permission sets for API calls from Apex.  
 
----
+
 
 
 ---
@@ -197,4 +197,4 @@ This project is licensed under the MIT License — see [LICENSE](LICENSE).
 
 ---
 
-**Happy Agentic Graphing and Integrating! 🚀**
+
