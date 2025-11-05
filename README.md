@@ -6,10 +6,9 @@
 - [Project Overview](#project-overview)  
 - [Key Technologies](#key-technologies)  
 - [Architecture & Methods](#architecture--methods)  
-  - Method 1: Manual Cypher RAG  
-  - Method 2: Retriever RAG  
-  - Method 3: No-RAG  
-  - Method 4: GraphRAG Pipeline  
+  - Agentic method: GraphRAG Pipeline  
+  - Regular method: Retriever RAG  
+  
 - [Demo / Screenshots](#demo--screenshots)  
 - [Getting Started](#getting-started)  
   - Prerequisites  
@@ -22,9 +21,8 @@
 
 ## Project Overview  
 This repository demonstrates an Agentic approach to integration between **Salesforce** (CRM platform) and **Neo4j** (graph-database) using the **Model Context Protocol (MCP)**, incorporating the concept of **GraphRAG** (Graph-based Retrieval-Augmented Generation).  
-The goal is to show the benefit of integration such as enhanced customer, case, or relationship analytics — such as multi-hop queries, similarity search and semantic understanding of data relationships.
 
-This project showcases four distinct integration methods, leveraging Apex, LWC, and Named Credentials within Salesforce, and querying Neo4j via MCP servers — staying entirely within the Salesforce and Neo4j ecosystem.
+This project showcases integration that leverage Apex, LWC, and Named Credentials on Salesforce side, and GraphRag pipeline functions, retrievers  on Neo4j side via MCP layer  
 
 ---
 
@@ -101,7 +99,7 @@ Salesforce **does not allow direct HTTP calls from LWC** due to security policy.
 ---
 ## 🌍 Testing via cURL
 
-**Local testing** Vector-only query
+**Local testing** 
 ```bash
 curl -s -X POST http://localhost:8005/mcp -H "Content-Type: application/json" -H "Accept: application/json,text/event-stream" -d '{
   "jsonrpc":"2.0","id":3,"method":"tools/call",
